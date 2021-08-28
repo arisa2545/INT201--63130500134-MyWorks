@@ -6,7 +6,9 @@ value = 'hello' + ' world';
 console.log(`value (line#5) is ${value} on typeof ${typeof value}`);
 value = new Date();
 console.log(`value (line#7) is ${value} on typeof ${typeof value}`);
-value = function (num) {
-  return num + num;
-};
+value = function (num) { return num + num; };
 console.log(`value (line#9) is ${value} on typeof ${typeof value}`);
+
+
+console.log(`${value}`);
+

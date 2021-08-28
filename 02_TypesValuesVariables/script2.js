@@ -17,7 +17,8 @@ if (num == 5) {
 }
 
 let myNum = 0;
-console.log(`type of myNum is ${typeof myNum}`);
+console.log(`type of myNum is ${typeof myNum}`); 
+// console.log('type of myNum, is' + (typeof myNum));
 
 let myString = 'Good';
 console.log(`type of myString is ${typeof myString}`);
@@ -67,6 +68,13 @@ console.log(`myObj1 === myObj2 is ${myObj === myObj2}`);
 let a = [];
 let b = a;
 b[0] = 1;
+a[1] = 2;
 let c = [1];
 console.log(`a === b is ${a === b}`);
 console.log(`b == c is ${b == c}`);
+
+console.log(a);
+console.log(b);
+console.log(c[0]);
+
+console.log(myObj);
