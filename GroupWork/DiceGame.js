@@ -33,6 +33,7 @@ function diceGame(player1, player2, total_Round){
         }
         total_dice_p1 += diceForP1; //total_dice_p1 = total_dice_p1 + diceForP1
         total_dice_p2 += diceForP2;   
+        
     }
 
     if(total_dice_p1 > total_dice_p2) {
