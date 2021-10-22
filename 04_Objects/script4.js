@@ -1,6 +1,7 @@
 function Person(name, age, job) {
   this.name = name;
   this.age = age;
+  
   this.job = job;
   this.sayName = function () {
     console.log(this.name);
@@ -19,3 +20,5 @@ Person.prototype.greeting = function () {
 };
 
 console.log(person1.greeting());
+console.log(person2.greeting());
+

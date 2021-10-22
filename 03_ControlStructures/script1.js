@@ -8,10 +8,18 @@ console.log(y === 0.1);
 console.log(`x = ${x}`);
 console.log(`y = ${y}`);
 
+// == vs ===
+let x = 10;
+let y = '10';
+
+console.log(x == y); //true
+console.log(x === y); //false
+
 //if-else
 const n = 1;
 if (n === 1) console.log('You have 1 new message.');
 else console.log(`You have ${n} new messages.`);
+
 //switch...case
 const month = 'JUNE';
 switch (month) {
@@ -27,6 +35,7 @@ switch (month) {
   default:
     console.log('not our focus months');
 }
+
 //while
 console.log('while');
 let count = 0;
@@ -55,6 +64,7 @@ let students = { id: 1, name: 'Adam', age: 20 };
 for (const property in students) {
   console.log(property + ':' + students[property]);
 }
+
 //for-of
 console.log('for-of');
 let data = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -62,5 +72,16 @@ let sum = 0;
 
 for (let item of data) {
   sum += item;
+}
+console.log(`sum = ${sum}`);
+
+//array on for-in
+ console.log('for-of');
+let data = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let sum = 0;
+
+for (let item in data) {
+  sum += data[item];
+  console.log(`${typeof item}`)
 }
 console.log(`sum = ${sum}`);

@@ -14,5 +14,5 @@ console.log(`value: ${value}`); // "Hlowrd"
 let x = 3;
 let y = 4;
 [x, y] = [y, x];
-console.log(x);
-console.log(y);
+console.log(x); //4
+console.log(y); //3

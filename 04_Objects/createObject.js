@@ -4,8 +4,8 @@ let triangle = {
     height: 2,
     area: function(){return 0.5*this.base*this.height},
 }
-// console.log(triangle.area()); // การเข้าถึง function
-// console.log(triangle.base); // การเข้าถึง key ทั่วไป
+console.log(triangle.area()); // การเข้าถึง function
+console.log(triangle.base); // การเข้าถึง key ทั่วไป
 
 // object ซ้อน Object (aggregate multiple value)
 let customer = { 
@@ -14,6 +14,7 @@ let customer = {
     order: {order_number: '112233', products: {'banana' : 1, 'apple' : 2}, amount: 300} 
 }
 console.log(customer.order.order_number); //การเข้าถึง object ใน object
+console.log(customer["order"]["order_number"]);
 for(let key in customer){
     console.log(key);
     console.log(customer[key]);
@@ -24,3 +25,6 @@ let question = {
     question: '1+1=?',
     choice: [1, 2, 3]
 } 
+
+console.log(question.choice[2]);
+console.log(question["choice"][2]);

@@ -1,4 +1,5 @@
 console.log(square(3)); //calling functions and hoisting
+
 function square(side) {
   return side * side;
 }
@@ -9,4 +10,8 @@ console.log(square(5)); //calling functions
 var x = 'global';
 let y = 'global';
 console.log(this.x); // "global" , this is window object
+// console.log(window.x);
+
+console.log(this.y);
 console.log(window.y); // undefined
+//window คืออาราย????

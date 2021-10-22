@@ -30,13 +30,13 @@ function calculate(change) {
         console.log(detailOfChange[i])
         // console.log(`${detailOfChange[i].valueOfbank} baht (${detailOfChange[i].numOfBank})`);
     }
-    return detailOfChange;
+    // return detailOfChange;
 }
 
-// payment(1000, 1523);
+payment(1000, 1523);
 // calculate(523);
-let arr = [{x: 100, y: 3}, {x: 100, y: 3}, {x: 100, y: 3}, {x: 100, y: 3}]
-console.table(arr);
+// let arr = [{x: 100, y: 3}, {x: 100, y: 3}, {x: 100, y: 3}, {x: 100, y: 3}]
+// console.table(arr);
 
 
 

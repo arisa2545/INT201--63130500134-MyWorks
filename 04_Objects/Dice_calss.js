@@ -8,6 +8,10 @@ class Dice {
             this._diceName = gameTitle;
         }
 
+        // if(gameTitle = 'unknow'){
+        //     this._diceName = gameTitle
+        // }
+
         this._faceValue = 0;  
     }
   
@@ -45,9 +49,9 @@ class Dice {
   console.log(dice1);
   console.log(dice1.toString());
   
-//   let dice2 = new Dice('');
-//   console.log(dice2);
-//   console.log(dice2.roll());
+  let dice2 = new Dice('DiceGame');
+  console.log(dice2);
+  console.log(dice2.roll());
 
 
 Dice.prototype.toString = function(){

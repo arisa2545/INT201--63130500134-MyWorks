@@ -23,3 +23,16 @@ console.log(obj.prop); // 2
 let nullObj = { prop: 'A' };
 objectPassingReference(nullObj);
 console.log(nullObj.prop); //A1
+
+//test ---------------------------------------------------------
+function count(text) {
+    //console.log(typeof text);
+    return `${text} A`;
+}
+
+let tt = 'game';
+console.log(count(tt)) //gameA
+
+count(tt)
+console.log(tt) //game
+// console.log(count('game'));

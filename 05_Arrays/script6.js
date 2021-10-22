@@ -5,8 +5,8 @@ let num2 = 20;
 num2 = num1; //num1 assigns value(10) to num2
 num2 = 55; //*insert this line
 
-// console.log(num1); //num1=?
-// console.log(num2); //num2=?
+console.log(num1); //num1=10
+console.log(num2); //num2=55
 
 
 
@@ -15,11 +15,11 @@ let std1 = { id: 1, name: 'Susan' };
 let std2 = { id: 2, name: 'John' };
 std2 = std1; //std1 assigns value (memory address) points to the same memory address
 std2.name = 'Peter';
-// console.log(std1); //std1=?
-// console.log(std2); //std2=?
+console.log(std1); //std1 = {id: 1, name: 'Peter'}
+console.log(std2); //std2 = {id: 2, name: 'Peter'}
 
-// console.log(num1 === num2); //num1===num2 ? primitive values are compared
-// console.log(std1 === std2); //std1===std2 ? memory address are compared
+console.log(num1 === num2); //num1===num2 ? primitive values are compared : flase
+console.log(std1 === std2); //std1===std2 ? memory address are compared : true
 
 //#3
 function doSomething1(student) {
@@ -28,20 +28,20 @@ function doSomething1(student) {
 }
 
 let std3 = { id: 3, name: 'Joe' };
-// console.log(typeof std3);
-// doSomething1(std3); //std3 is an actual parameter
-// console.log(std3); //?
+console.log(typeof std3);
+doSomething1(std3); //std3 is an actual parameter
+console.log(std3); // {id: 635000111, name: 'Joe'}
 
 //#4
 function doSomething2(num) {
-  //num=num3
+  //num=num3 -> num = 1 **เเล้วมันก้ไม่ไปยุ่งกับ num3 อีก
   num = 555;
 }
 
 let num3 = 1;
-// console.log(typeof num3);
-// doSomething2(num3);
-// console.log(num3); //?
+console.log(typeof num3);
+doSomething2(num3); //เเต่ตรงนี้ที่จริงเเล้ว return 555 ออกมานะ เเค่ไม่ปริ้น
+console.log(num3); //1
 
 
 let colors = [
@@ -59,10 +59,10 @@ let students = [
 ];
 
 students[students.length-1].name = 'Arisa'
-console.log(students[students.length-1]);
+// console.log(students[students.length-1]);
 
 
-// let students2 = [1, ...students, 100];
-// students2[1] = 'Arisa';
-// console.log(students2[1]);
-// console.log(students)
+let students2 = [1, ...students, 100];
+students2[1] = 'Arisa';
+console.log(students2[1]);
+console.log(students);

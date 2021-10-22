@@ -101,6 +101,7 @@ class Rectangle {
     );
   }
 }
+
 let rec1 = new Rectangle(2.5, 3.5);
 console.log(rec1.width); //2.5
 console.log(rec1.height); //3.5
