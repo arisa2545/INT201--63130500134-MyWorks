@@ -1,0 +1,20 @@
+h1 {
+    font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    quotes: "“" "”";
+    padding: 5ex;
+}
+
+body {
+    font-size: 17px;
+    line-height: 1.52947;
+    font-weight: 400;
+    letter-spacing: -.021em;
+    font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    min-width: 1024 px;
+}
